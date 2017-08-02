@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		642B0E6B1F3214CC004B49B7 /* fittime_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 642B0E6A1F3214CC004B49B7 /* fittime_icon.png */; };
 		6450360F1F3107EE0033AD60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6450360E1F3107EE0033AD60 /* AppDelegate.swift */; };
 		645036111F3107EE0033AD60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645036101F3107EE0033AD60 /* ViewController.swift */; };
 		645036141F3107EE0033AD60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 645036121F3107EE0033AD60 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		642B0E6A1F3214CC004B49B7 /* fittime_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fittime_icon.png; path = Ressources/fittime_icon.png; sourceTree = "<group>"; };
 		6450360B1F3107EE0033AD60 /* FitTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6450360E1F3107EE0033AD60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		645036101F3107EE0033AD60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,9 +78,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		642B0E691F3214B1004B49B7 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				642B0E6A1F3214CC004B49B7 /* fittime_icon.png */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
 		645036021F3107EE0033AD60 = {
 			isa = PBXGroup;
 			children = (
+				642B0E691F3214B1004B49B7 /* Ressources */,
 				6450360D1F3107EE0033AD60 /* FitTime */,
 				645036251F3107EE0033AD60 /* FitTimeTests */,
 				645036301F3107EE0033AD60 /* FitTimeUITests */,
@@ -201,11 +212,13 @@
 					};
 					645036211F3107EE0033AD60 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = GAW822D696;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 6450360A1F3107EE0033AD60;
 					};
 					6450362C1F3107EE0033AD60 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = GAW822D696;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 6450360A1F3107EE0033AD60;
 					};
@@ -237,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6450361C1F3107EE0033AD60 /* LaunchScreen.storyboard in Resources */,
+				642B0E6B1F3214CC004B49B7 /* fittime_icon.png in Resources */,
 				645036191F3107EE0033AD60 /* Assets.xcassets in Resources */,
 				645036141F3107EE0033AD60 /* Main.storyboard in Resources */,
 			);
@@ -446,6 +460,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GAW822D696;
 				INFOPLIST_FILE = FitTimeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AB.FitTimeTests;
@@ -460,6 +475,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GAW822D696;
 				INFOPLIST_FILE = FitTimeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AB.FitTimeTests;
@@ -473,6 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GAW822D696;
 				INFOPLIST_FILE = FitTimeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AB.FitTimeUITests;
@@ -486,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GAW822D696;
 				INFOPLIST_FILE = FitTimeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AB.FitTimeUITests;
