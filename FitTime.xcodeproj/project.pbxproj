@@ -196,6 +196,7 @@
 				TargetAttributes = {
 					6450360A1F3107EE0033AD60 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = GAW822D696;
 						ProvisioningStyle = Automatic;
 					};
 					645036211F3107EE0033AD60 = {
@@ -416,7 +417,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GAW822D696;
 				INFOPLIST_FILE = FitTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AB.FitTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,7 +431,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GAW822D696;
 				INFOPLIST_FILE = FitTime/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AB.FitTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -509,6 +514,7 @@
 				645036381F3107EE0033AD60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		645036391F3107EE0033AD60 /* Build configuration list for PBXNativeTarget "FitTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +523,7 @@
 				6450363B1F3107EE0033AD60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6450363C1F3107EE0033AD60 /* Build configuration list for PBXNativeTarget "FitTimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +532,7 @@
 				6450363E1F3107EE0033AD60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
