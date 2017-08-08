@@ -16,6 +16,9 @@
 		6450361C1F3107EE0033AD60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6450361A1F3107EE0033AD60 /* LaunchScreen.storyboard */; };
 		645036271F3107EE0033AD60 /* FitTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645036261F3107EE0033AD60 /* FitTimeTests.swift */; };
 		645036321F3107EE0033AD60 /* FitTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645036311F3107EE0033AD60 /* FitTimeUITests.swift */; };
+		648218151F39FAFF00ED4C33 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648218141F39FAFF00ED4C33 /* ProfilViewController.swift */; };
+		648218171F39FD0B00ED4C33 /* PlanningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648218161F39FD0B00ED4C33 /* PlanningViewController.swift */; };
+		648218191F39FD3900ED4C33 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648218181F39FD3900ED4C33 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		6450362D1F3107EE0033AD60 /* FitTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		645036311F3107EE0033AD60 /* FitTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitTimeUITests.swift; sourceTree = "<group>"; };
 		645036331F3107EE0033AD60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		648218141F39FAFF00ED4C33 /* ProfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
+		648218161F39FD0B00ED4C33 /* PlanningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanningViewController.swift; sourceTree = "<group>"; };
+		648218181F39FD3900ED4C33 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 			children = (
 				6450360E1F3107EE0033AD60 /* AppDelegate.swift */,
 				645036101F3107EE0033AD60 /* ViewController.swift */,
+				648218141F39FAFF00ED4C33 /* ProfilViewController.swift */,
+				648218161F39FD0B00ED4C33 /* PlanningViewController.swift */,
+				648218181F39FD3900ED4C33 /* InfoViewController.swift */,
 				645036121F3107EE0033AD60 /* Main.storyboard */,
 				645036181F3107EE0033AD60 /* Assets.xcassets */,
 				6450361A1F3107EE0033AD60 /* LaunchScreen.storyboard */,
@@ -277,9 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				648218151F39FAFF00ED4C33 /* ProfilViewController.swift in Sources */,
 				645036111F3107EE0033AD60 /* ViewController.swift in Sources */,
 				6450360F1F3107EE0033AD60 /* AppDelegate.swift in Sources */,
 				645036171F3107EE0033AD60 /* FitTime.xcdatamodeld in Sources */,
+				648218191F39FD3900ED4C33 /* InfoViewController.swift in Sources */,
+				648218171F39FD0B00ED4C33 /* PlanningViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
