@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		641650D11F6A7082004D16CF /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641650D01F6A7082004D16CF /* HealthKit.framework */; };
 		642B0E6B1F3214CC004B49B7 /* fittime_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 642B0E6A1F3214CC004B49B7 /* fittime_icon.png */; };
 		6450360F1F3107EE0033AD60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6450360E1F3107EE0033AD60 /* AppDelegate.swift */; };
 		645036111F3107EE0033AD60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645036101F3107EE0033AD60 /* ViewController.swift */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		641650CE1F6A7082004D16CF /* FitTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FitTime.entitlements; sourceTree = "<group>"; };
+		641650D01F6A7082004D16CF /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		642B0E6A1F3214CC004B49B7 /* fittime_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fittime_icon.png; path = Ressources/fittime_icon.png; sourceTree = "<group>"; };
 		6450360B1F3107EE0033AD60 /* FitTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6450360E1F3107EE0033AD60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641650D11F6A7082004D16CF /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +88,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		641650CF1F6A7082004D16CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				641650D01F6A7082004D16CF /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		642B0E691F3214B1004B49B7 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +112,7 @@
 				645036251F3107EE0033AD60 /* FitTimeTests */,
 				645036301F3107EE0033AD60 /* FitTimeUITests */,
 				6450360C1F3107EE0033AD60 /* Products */,
+				641650CF1F6A7082004D16CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +129,7 @@
 		6450360D1F3107EE0033AD60 /* FitTime */ = {
 			isa = PBXGroup;
 			children = (
+				641650CE1F6A7082004D16CF /* FitTime.entitlements */,
 				6450360E1F3107EE0033AD60 /* AppDelegate.swift */,
 				645036101F3107EE0033AD60 /* ViewController.swift */,
 				648218141F39FAFF00ED4C33 /* ProfilViewController.swift */,
@@ -216,8 +230,16 @@
 				TargetAttributes = {
 					6450360A1F3107EE0033AD60 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = GAW822D696;
+						DevelopmentTeam = KNKMG854P7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					645036211F3107EE0033AD60 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -443,12 +465,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GAW822D696;
+				CODE_SIGN_ENTITLEMENTS = FitTime/FitTime.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KNKMG854P7;
 				INFOPLIST_FILE = FitTime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = AB.FitTime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ab.fittime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -457,12 +482,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GAW822D696;
+				CODE_SIGN_ENTITLEMENTS = FitTime/FitTime.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KNKMG854P7;
 				INFOPLIST_FILE = FitTime/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = AB.FitTime;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ab.fittime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
